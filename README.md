@@ -1,4 +1,6 @@
-<img src="https://infras-hn.org/images/logoB.png"></p>
+<img src="https://infras-hn.org/images/logoB.png" height="114" width="338"></p>
+
+
 
 # [SISOCS APP - OCDS](https://infras-hn.org)
 
