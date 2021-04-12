@@ -1,4 +1,4 @@
-<p align="center"><img src="https://infras-hn.org/images/logoB.png"></p>
+<img src="https://infras-hn.org/images/logoB.png"></p>
 
 # [SISOCS APP - OCDS](https://infras-hn.org)
 
@@ -61,6 +61,7 @@ La barra de menú contiene las siguientes opciones:
 3.	Dimensión Social.
 4.	Dimensión Económica. 
 
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
 
 #### B) Dimensión Ambiental 
 #### C) Dimensión Institucional 
@@ -70,3 +71,17 @@ La barra de menú contiene las siguientes opciones:
 ## Guía de instalación
 
 ### Instalación del frontend
+
+##### Requerimientos:
+* Python 2.7 o superior
+* Django 1.6
+* SQLite 3
+* Pillow 1.8
+* API Google Maps
+
+#### Indicaciones:
+
+La dimensión ambiental está desarrollada en Django 1.6, con base de datos en SQLite 3, desarrollada interactuando con el API Javascript de gooogle maps, para las dimensiones Institucional, Social y Económica se utiliza un objeto html iframe apuntando al su correspondiente informe de power bi:
+Dimensión Institucional ->
+* [Dimensión Social] (https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
+Dimensión Económica ->
