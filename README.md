@@ -1,4 +1,4 @@
-<img src="https://infras-hn.org/images/logoB.png" height="114" width="338"></p>
+<p align="left"><img src="https://infras-hn.org/images/logoB.png" height="114" width="338"></p>
 
 
 
