@@ -1,6 +1,6 @@
 <img src="https://infras-hn.org/images/logoB.png"></p>
 
-# [INFRAS - HN](https://infras-hn.org)
+# [SISOCS APP - OCDS](https://infras-hn.org)
 
 [English documentation](README_en.MD)
 
@@ -44,3 +44,30 @@ Dimensión Social,Institucional y Económica
 <p align="center"><img src="https://infras-hn.org/images/Arquitectura%20Institucional%20Social%20Economica.png"></p>
 
 ### Uso del sistema
+
+#### Acceso
+Existen dos formas para ingresar al sistema, en la primera debe de buscar en su navegador de confianza SISOCS APP y la segunda forma consiste en ingresar por medio de un enlace (https://infras-hn.org/) que lo llevará automáticamente al sitio.
+
+#### Página de inicio
+
+#### A) Barra de menú
+
+La barra de menú contiene las siguientes opciones:
+
+<p align="center"><img src="https://infras-hn.org/images/infras/infras-menu.PNG"></p>
+
+1.	Dimensión Ambiental.
+2.	Dimensión Institucional.
+3.	Dimensión Social.
+4.	Dimensión Económica. 
+
+<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
+
+#### B) Dimensión Ambiental 
+#### C) Dimensión Institucional 
+#### D) Dimensión Social
+#### E) Dimensión Económica 
+
+## Guía de instalación
+
+### Instalación del frontend
