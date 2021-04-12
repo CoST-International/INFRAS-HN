@@ -33,7 +33,14 @@
 
 ## Descripción y contexto
 
-INFRAS es una herramienta....
+InfraS es una plataforma diseñada por la Iniciativa de Transparencia en Infraestructura CoST con el objetivo de promover que la infraestructura pública en Honduras se planee y conserve adecuadamente apostando a su sostenibilidad ambiental, social, institucional y económica. La plataforma pretende evaluar indicadores dentro de cada una de las dimensiones expuestas, cuya medición y seguimiento pueden contribuir a identificar oportunidades de mejora para el desarrollo de infraestructura sostenible.
+
+[CoST Honduras](https://costhonduras.hn/), espera contribuir al logro de los Objetivos de Desarrollo Sostenible en el país al abordar los riesgos ambientales, analizar los recursos financieros para construir y mantener la infraestructura durante su vida útil, identificar afectación de los proyectos en grupos de población y entender la dinámica institucional sobre el manejo de las contrataciones públicas. 
+
+InfraS usa diversos datos oficiales entre los que destacan los publicados en el [Sistema de Información y Seguimiento a Obras y Contratos de Supervisión- SISOCS](https://sisocs.org/) y en el [Portal de Contrataciones Abiertas de Honduras](http://www.contratacionesabiertas.gob.hn/), los cuales cumplen con reconocidos estándares internacionales. InfraS presentará análisis por cada una de las áreas que componen la infraestructura sostenible, en el marco de compromisos de la Alianza para el Gobierno Abierto de Honduras.
+
+La herramienta está compuesta de cuatro componentes correspondientes a las dimensiones de la infraestructura sostenible mencionadas anteriormente. En cada dimensión se miden indicadores construidos a partir de los datos disponibles sobre los proyectos de infraestructura provenientes de las fuentes mencionadas anteriormente, así como de otros portales de datos abiertos relacionados a temas específicos. 
+![image](https://user-images.githubusercontent.com/45407377/114363487-b9c4df00-9b78-11eb-89db-a179339198a0.png)
 
 ## Guía del usuario
 
