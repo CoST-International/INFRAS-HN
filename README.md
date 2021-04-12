@@ -1,4 +1,4 @@
-<img src="https://infras-hn.org/images/logoB.png"></p>
+<p align="center"><img src="https://infras-hn.org/images/logoB.png"></p>
 
 # [SISOCS APP - OCDS](https://infras-hn.org)
 
@@ -61,7 +61,6 @@ La barra de menú contiene las siguientes opciones:
 3.	Dimensión Social.
 4.	Dimensión Económica. 
 
-<p align="center"><img src="https://infras-hn.org/images/sisocsapp/Sisocsapp-ocds.png"></p>
 
 #### B) Dimensión Ambiental 
 #### C) Dimensión Institucional 
