@@ -2,7 +2,7 @@
 
 
 
-# [SISOCS APP - OCDS](https://infras-hn.org)
+# [InfraS](https://infras-hn.org)
 
 [English documentation](README_en.MD)
 
