@@ -33,14 +33,15 @@
 
 ## Descripción y contexto
 
-InfraS es una plataforma diseñada por la Iniciativa de Transparencia en Infraestructura CoST con el objetivo de promover que la infraestructura pública en Honduras se planee y conserve adecuadamente apostando a su sostenibilidad ambiental, social, institucional y económica. La plataforma pretende evaluar indicadores dentro de cada una de las dimensiones expuestas, cuya medición y seguimiento pueden contribuir a identificar oportunidades de mejora para el desarrollo de infraestructura sostenible.
+InfraS es una plataforma diseñada por la Iniciativa de Transparencia en Infraestructura -CoST Honduras- con el objetivo de promover que la infraestructura pública se planee y conserve adecuadamente apostando a su sostenibilidad ambiental, social, institucional y económica.
 
-[CoST Honduras](https://costhonduras.hn/), espera contribuir al logro de los Objetivos de Desarrollo Sostenible en el país al abordar los riesgos ambientales, analizar los recursos financieros para construir y mantener la infraestructura durante su vida útil, identificar afectación de los proyectos en grupos de población y entender la dinámica institucional sobre el manejo de las contrataciones públicas. 
+[CoST Honduras](https://costhonduras.hn/) espera contribuir al logro de los [Objetivos de Desarrollo Sostenible (ODS)](https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/) en el país al abordar los riesgos ambientales de los proyectos, analizar los recursos financieros para construir y mantener la infraestructura durante su vida útil, identificar afectación de las obras en grupos de población y entender la dinámica institucional sobre el manejo de las contrataciones públicas, identificando, a la vez, oportunidades de mejora para el desarrollo de infraestructura sostenible.
 
-InfraS usa diversos datos oficiales entre los que destacan los publicados en el [Sistema de Información y Seguimiento a Obras y Contratos de Supervisión- SISOCS](https://sisocs.org/) y en el [Portal de Contrataciones Abiertas de Honduras](http://www.contratacionesabiertas.gob.hn/), los cuales cumplen con reconocidos estándares internacionales. InfraS presentará análisis por cada una de las áreas que componen la infraestructura sostenible, en el marco de compromisos de la Alianza para el Gobierno Abierto de Honduras.
 
-La herramienta está compuesta de cuatro componentes correspondientes a las dimensiones de la infraestructura sostenible mencionadas anteriormente. En cada dimensión se miden indicadores construidos a partir de los datos disponibles sobre los proyectos de infraestructura provenientes de las fuentes mencionadas anteriormente, así como de otros portales de datos abiertos relacionados a temas específicos. 
+InfraS usa diversos datos oficiales entre los que destacan los publicados en el [Sistema de Información y Seguimiento a Obras y Contratos de Supervisión- SISOCS](https://sisocs.org/) y en el [Portal de Contrataciones Abiertas de Honduras](http://www.contratacionesabiertas.gob.hn/), los cuales cumplen con reconocidos estándares internacionales. InfraS presentará análisis por cada una de las áreas que componen la infraestructura sostenible, en el marco de compromisos de la [Alianza para el Gobierno Abierto de Honduras](http://www.gobiernoabiertohonduras.org/).
 
+La herramienta está compuesta por cuatro componentes correspondientes a las dimensiones de la infraestructura sostenible. En cada dimensión se miden indicadores relevantes construidos a partir de los datos disponibles sobre los proyectos de infraestructura pública en Honduras. 
+ 
 ![image](https://user-images.githubusercontent.com/45407377/114363876-2049fd00-9b79-11eb-9bd6-58c3bb04a2c4.png)
 
 ## Guía del usuario
