@@ -40,7 +40,8 @@ InfraS es una plataforma diseñada por la Iniciativa de Transparencia en Infraes
 InfraS usa diversos datos oficiales entre los que destacan los publicados en el [Sistema de Información y Seguimiento a Obras y Contratos de Supervisión- SISOCS](https://sisocs.org/) y en el [Portal de Contrataciones Abiertas de Honduras](http://www.contratacionesabiertas.gob.hn/), los cuales cumplen con reconocidos estándares internacionales. InfraS presentará análisis por cada una de las áreas que componen la infraestructura sostenible, en el marco de compromisos de la Alianza para el Gobierno Abierto de Honduras.
 
 La herramienta está compuesta de cuatro componentes correspondientes a las dimensiones de la infraestructura sostenible mencionadas anteriormente. En cada dimensión se miden indicadores construidos a partir de los datos disponibles sobre los proyectos de infraestructura provenientes de las fuentes mencionadas anteriormente, así como de otros portales de datos abiertos relacionados a temas específicos. 
-![image](https://user-images.githubusercontent.com/45407377/114363487-b9c4df00-9b78-11eb-89db-a179339198a0.png)
+
+![image](https://user-images.githubusercontent.com/45407377/114363876-2049fd00-9b79-11eb-9bd6-58c3bb04a2c4.png)
 
 ## Guía del usuario
 
