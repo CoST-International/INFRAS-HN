@@ -11,10 +11,7 @@
     - [Uso del sistema](#uso-del-sistema)
     - [Guía de instalación](#Guía-de-instalación)
       - [Requerimientos](#Requerimientos)
-      - [Instalación del componenete OCDS](#Instalación-del-componenete-OCDS)
-       - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
-       - [Archivo config.json para el módulo SISOCS](#Archivo-configjson-para-el-módulo-SISOCS)
-       - [Archivo config.json para el servidor](#Archivo-configjson-para-el-servidor)
+      - [Indicaciones de Instalación ](#Indicaciones)
 - [Cómo contribuir](#Cómo-contribuir)
     - [Atribuciones](#atribuciones)
 - [Código de conducta](#código-de-conducta)
@@ -98,7 +95,7 @@ En este componente se presenta la distribución de la inversión actual en infra
 * Python 2.7 o superior
 * Django 1.6
 * SQLite 3
-* Pillow 1.8
+* Pillow 1.1.7
 * API Google Maps
 
 #### Indicaciones:
@@ -109,12 +106,64 @@ La dimensión ambiental está desarrollada en Django 1.6, con base de datos en S
 * [Dimensión Social](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Económica](https://app.powerbi.com/view?r=eyJrIjoiMGIyNzQwZGYtNWZhZi00NDdmLWI5ZGItZjYyMTM5NTUxMGI4IiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9)
 
+Para estas dimensiones solamente es necesario copiar los html correspondientes los cuales son llamados desde el menu superior del sitio.
+A continuación los pasos necesarios para instalar la dimension Ambiental:
 
+#### Instalación Django 1.6:
+
+Para instalar la versión 1.6 de Django solo debes utilizar el administrador de paquetes pip y pedirle que instale Django en su version 1.6 con el siguiente comando:
 
 ```
-pip install pillow=1.8
+pip install Django==3.2
+```
+Para manejar las imágenes dentro de django se utiliza la libreria pillow para python en su version 1.1.7, para instalar ejecutar el siguiente comando:
 
 ```
+pip install pillow=1.1.7
+```
+#### Configuración Base de datos:
+
+La base de datos dentro de Django es configurada dentro del archivo settings.py el cual se encuentra dentro de la carpeta hnmap/settings.py desde alli se puede configurar que base de datos se utilizará en este caso sqllite en su versión 3.
+
+```
+# Database
+# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+```
+Una de las ventajas de Django es que el propio lenguaje administra la base de datos a traves de modelos, para mas información https://docs.djangoproject.com/es/3.1/releases/1.6/#
+
+#### Configuración API Google maps
+
+Para realizar la configuración con el API de Google maps es necesario crear una cuenta para obtener un key, para mas información sobre como obtener el key  https://developers.google.com/maps/documentation/javascript/get-api-key.
+
+Dentro del código fuente en el archivo /principal/templates/main.html debes sustituir las xxxxxxxxxxxxxxxxxxxxxxxxxxxx por el key brindada por google.
+
+```
+    <script src="https://maps.googleapis.com/maps/api/js?key=xxxxxxxxxxxxxxxxxxxxxxxxxxxx&callback=initMap"
+    async defer></script>
+```
+#### Ejecutar desde entorno de desarrollo de Django
+
+El entorno de desarrollo de django es una instalación de Django en tu computadora local la cual es utilizada para desarrollar y probar apps Django antes de desplegarlas al entorno de producción. Para probar el sitio en el entorno de desarrollo se debe ejecutar este comando desde la ubicacion Ambiental/ una vez que se hayan hecho los pasos mencionados arriba.
+
+```
+C:\<ubicacion>\python manage.py runserver
+Validating models...
+
+0 errors found
+April 13, 2021 - 14:41:50
+Django version 1.6, using settings 'hnmap.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+
 
 ## Cómo contribuir
 
