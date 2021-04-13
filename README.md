@@ -10,7 +10,7 @@
     - [Arquitectura](#arquitectura)
     - [Uso del sistema](#uso-del-sistema)
     - [Guía de instalación](#Guía-de-instalación)
-      - [Instalación del frontend](#instalación-del-frontend)
+      - [Requerimientos](# Requerimientos)
       - [Instalación del componenete OCDS](#Instalación-del-componenete-OCDS)
        - [Agregar información al esquema de MongoDB](#Agregar-información-al-esquema-de-MongoDB)
        - [Archivo config.json para el módulo SISOCS](#Archivo-configjson-para-el-módulo-SISOCS)
@@ -105,10 +105,16 @@ En este componente se presenta la distribución de la inversión actual en infra
 
 La dimensión ambiental está desarrollada en Django 1.6, con base de datos en SQLite 3, la misma con el API Javascript de gooogle maps, para las dimensiones Institucional, Social y Económica se utiliza un objeto html iframe apuntando al su correspondiente informe de power bi:
 
-* [Dimensión Institucional](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
+* [Dimensión Institucional](https://app.powerbi.com/view?r=eyJrIjoiM2JmYzlkZWMtMzgzYy00ZDI5LWJjYjAtYTU2NGZiZjFiZWJjIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Social](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Económica](https://app.powerbi.com/view?r=eyJrIjoiMGIyNzQwZGYtNWZhZi00NDdmLWI5ZGItZjYyMTM5NTUxMGI4IiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9)
 
+
+
+```
+pip install pillow=1.8
+
+```
 
 ## Cómo contribuir
 
