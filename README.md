@@ -62,7 +62,7 @@ La herramienta está compuesta por cuatro componentes correspondientes a las dim
 ### Uso del sistema
 
 #### Acceso
-Los usuarios pueden ingresar al sitio por medio del enlace (https://infras-hn.org/).
+Los usuarios pueden ingresar al sitio por medio del enlace https://infras-hn.org/
 
 #### Página de inicio
 
@@ -108,9 +108,6 @@ La dimensión ambiental está desarrollada en Django 1.6, con base de datos en S
 * [Dimensión Institucional](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Social](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Económica](https://app.powerbi.com/view?r=eyJrIjoiMGIyNzQwZGYtNWZhZi00NDdmLWI5ZGItZjYyMTM5NTUxMGI4IiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9)
-
-
-
 
 
 ## Cómo contribuir
