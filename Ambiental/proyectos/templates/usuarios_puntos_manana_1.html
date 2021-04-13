@@ -1,0 +1,266 @@
+{% extends "main.html" %}
+        {% block header %}
+                <style type="text/css">
+            .container
+            {
+
+                width:1280px;
+            }
+        </style>
+            <div class="page-header">
+                <h1 style="color:white;">Pronosticos Usuarios Mañana<small></small></h1>
+            </div>
+            <div class="well well-sm" style="height: 57px;">
+                <div class="btn-group">
+                    <a href="{% url 'puntos_usuarios' %}"  class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span> Todos</a>
+                    <a href="{% url 'puntos_usuarios_hoy' %}"  class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span> Puntos Hoy</a>
+                    <a href="{% url 'puntos_usuarios_manana' %}"  class="btn btn-default active"><span class="glyphicon glyphicon-list-alt"></span> Puntos de Mañana</a>
+                </div>
+                <div style="float: right;margin-top: -7px;position: relative;display: block;">
+                       <form class="navbar-right" method="get" action="{% url 'puntos_usuario'%}" style="margin: 8px 0px 0px 1px;float: right;">
+                    <div class="form-group" style="float:left;">
+                        <select class="form-control" name="usuario">
+                            <option value="1">Seleccione Usuario</option>
+                            {% for e in usuarios %}
+                            <option value="{{e.usuario.pk}}">{{e.nombre}}</option>
+                            {% endfor%}
+                        </select>
+                        </div>
+                           <button type="submit"  class="btn btn-default"><span class="glyphicon glyphicon-search"></span> </button>
+                    </form>
+                    <form class=" navbar-right" method="get" action="{% url 'puntos_usuarios_fecha' %}" style="margin: 8px 0px 0px 1px;float: right;" placeholder="YYYY-MM-DD">
+                    <div class="form-group" style="float:left;">
+                    <input name="fecha" type="text" class="form-control"  value="{{fecha}}" data-date-format="yyyy-mm-dd" id="dp2" >
+                       </div>
+                           <button type="submit"  class="btn btn-default"><span class="glyphicon glyphicon-search"></span> </button>
+                    </form>
+ 
+                </div>
+            </div>
+        {% endblock %}
+        {% block content %}
+            {% include "messages.html" %}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <span class="row">
+                        <span class="col-lg-12">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">
+                                            Usuario
+                                        </th>
+                                        <th>
+                                            Fecha 
+                                        </th>
+                                        <th>
+                                            Estado
+                                        </th>
+                                        <th colspan="3">
+                                            Resultado
+                                        </th>
+                                        <th colspan="3">
+                                            Pronostico
+                                        </th>
+                                        <th>
+                                            Resultado
+                                        </th>
+                                        <th>
+                                            Ganador
+                                        </th>
+                                        <th>
+                                            Puntos
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align:center">
+                                    {% for pro in pronostico %}
+                                        <tr>
+                                           <td style="text-align:  middle;    vertical-align: middle;border-right-color: white;">      
+                                            {% for us in usuarios %}
+                                                {% if us.usuario.pk == pro.usuario.pk %}                                                                                
+                                                    {{ us.nombre }}
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;">
+                                                    <IMG SRC="/resources/{{ us.imagen }}" style="height: 30px;width: 30px;background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;">  
+                                                {% endif %} 
+                                            {% endfor %}
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle; ">
+                                                {{ pro.id_enfrentamiento.fecha_enfrentamiento }}
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;">
+                                                {{ pro.id_enfrentamiento.estado }}
+                                            </td>
+                                            <td style="text-align:  right;    vertical-align: middle; border-right-color: white;">                                       
+                                                {{ pro.id_enfrentamiento.equipo1.nombre }}
+                                                <IMG SRC="/resources/{{ pro.id_enfrentamiento.equipo1.imagen }}" style="height: 30px;width: 30px;background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;">
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;border-right-color: white;border-left-color: white;">
+                                                {% if pro.id_enfrentamiento.estado != "FINALIZADO" %}
+                                                    <spam style="font-size:20px">&nbsp-&nbsp&nbsp-&nbsp</spam>
+                                                {% else %}            
+                                                <spam style="font-size:20px">{{ pro.id_enfrentamiento.resultado1 }} - </spam>
+
+                                                <spam style="font-size:20px">{{ pro.id_enfrentamiento.resultado2 }}</spam>
+                                                {% endif %} 
+                                            </td>
+                                            <td style="text-align:  left;    vertical-align: middle;border-left-color: white;">
+                                                <IMG SRC="/resources/{{ pro.id_enfrentamiento.equipo2.imagen }}" style="height: 30px;width: 30px;background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;">
+                                                {{ pro.id_enfrentamiento.equipo2.nombre }}
+                                            </td>
+                                            <td style="text-align:  right;    vertical-align: middle;border-right-color: white;">
+                                                {{ pro.id_enfrentamiento.equipo1.nombre }}
+                                                <IMG SRC="/resources/{{ pro.id_enfrentamiento.equipo1.imagen }}" style="height: 30px;width: 30px;background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;">
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;border-right-color: white;border-left-color: white;">       
+                                                <spam style="font-size:20px">{{ pro.resultado1 }} - </spam>
+                                                <spam style="font-size:20px">{{ pro.resultado2 }}</spam>
+                                            </td>
+                                            <td style="text-align:  left;    vertical-align: middle;border-left-color: white;">   
+                                                <IMG SRC="/resources/{{ pro.id_enfrentamiento.equipo2.imagen }}" style="height: 30px;width: 30px;background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;">
+                                                {{ pro.id_enfrentamiento.equipo2.nombre }}
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;">
+                                            {% if pro.id_enfrentamiento.resultado1 == pro.resultado1 and pro.id_enfrentamiento.resultado2 == pro.resultado2 and pro.id_enfrentamiento.estado == 'FINALIZADO'%}
+                                                   <IMG style="height: 20px;width: 20px; "SRC="/resources/pictures/ok.png" >
+                                                {% else %}            
+                                                    <IMG style="height: 20px;width: 20px; "SRC="/resources/pictures/nook.png" >
+                                                {% endif %}     
+                                            </td>
+                                            
+                                             <td style="text-align:  center;    vertical-align: middle;">
+                                             {% if pro.id_enfrentamiento.ganador == pro.ganador and pro.id_enfrentamiento.estado == 'FINALIZADO'%}
+                                                    <IMG style="height: 20px;width: 20px; "SRC="/resources/pictures/ok.png" >
+                                                {% else %}            
+                                                    <IMG style="height: 20px;width: 20px; "SRC="/resources/pictures/nook.png" >
+                                                {% endif %} 
+                                                
+                                            </td>
+                                            <td style="text-align:  center;    vertical-align: middle;">
+                                            {% if pro.id_enfrentamiento.resultado1 == pro.resultado1 and pro.id_enfrentamiento.resultado2 == pro.resultado2 and pro.id_enfrentamiento.estado == 'FINALIZADO'%}
+                                                    3
+                                                {% else %}
+                                                {%if pro.id_enfrentamiento.ganador == pro.ganador and pro.id_enfrentamiento.estado == 'FINALIZADO'%}          
+                                                    1
+                                                {%else %}
+                                                    0
+                                                {% endif %} 
+                                                {% endif %}   
+                                                
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        {% endblock %}
+        {% block js %}
+
+<script src="/resources/datejs/google-code-prettify/prettify.js"></script>
+<script src="/resources/datejs/jquery.js"></script>
+<script src="/resources/datejs/bootstrap-datepicker.js"></script>
+<!--<script type="text/javascript">
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+    var month=nowTemp.getMonth()+1+"";
+    var day =nowTemp.getDate()+"";
+
+    if(month.length==1){
+        month="0"+month;
+        }
+    if(day.length==1){
+        day="0"+day;
+        }
+    $('#dp2').val(nowTemp.getFullYear()+"-"+month+"-"+day);
+    $('#dp3').val(nowTemp.getFullYear()+"-"+month+"-"+day);
+    </script>-->ß
+<script>
+
+$(function() {
+      $( 'btn-group a' ).on( 'click', function() {
+            $( this ).parent().find( 'a.active' ).removeClass( 'active' );
+            $( this ).addClass( 'active' );
+      });
+});
+//CALENDARIO
+
+    if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+    $(function(){
+        window.prettyPrint && prettyPrint();
+        $('#dp2').datepicker();
+        var startDate = new Date(2012,1,20);
+        var endDate = new Date(2012,1,25);
+
+        // disabling dates
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('#dpd1').datepicker({
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          if (ev.date.valueOf() > checkout.date.valueOf()) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate() + 1);
+            checkout.setValue(newDate);
+          }
+          checkin.hide();
+          $('#dpd2')[0].focus();
+        }).data('datepicker');
+        var checkout = $('#dpd2').datepicker({
+          onRender: function(date) {
+            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          checkout.hide();
+        }).data('datepicker');
+        });
+
+        $(function(){
+        window.prettyPrint && prettyPrint();
+        $('#dp3').datepicker();
+        var startDate = new Date(2012,1,20);
+        var endDate = new Date(2012,1,25);
+
+        // disabling dates
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('#dpd1').datepicker({
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          if (ev.date.valueOf() > checkout.date.valueOf()) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate() + 1);
+            checkout.setValue(newDate);
+          }
+          checkin.hide();
+          $('#dpd3')[0].focus();
+        }).data('datepicker');
+        var checkout = $('#dpd3').datepicker({
+          onRender: function(date) {
+            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(ev) {
+          checkout.hide();
+        }).data('datepicker');
+        });
+
+
+
+
+
+</script>
+
+            
+        {% endblock %}

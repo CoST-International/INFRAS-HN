@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INFRAS</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="/resources/pictures/favicon.ico" />
+       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- Font Awesome JS -->
+        <script defer src="/resources/js/solid.js"></script>
+        <script defer src="/resources/js/fontawesome.js"></script>
+
+          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <style type="text/css">
+            body{
+                font-family: 'Montserrat', sans-serif;
+            }
+            .navbar{
+                background-color: white;
+                height: 76px;
+            }
+            .container_nav{
+                height: 100%;
+                margin-left:10%;
+                margin-right: 10%;
+            }
+            .navbar-fixed-top{
+
+                
+            } .navbar-fixed-bottom {
+                
+            }
+            .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }               
+            .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+                height: 100% !important;
+            }
+            .nav>li {
+                height: 100%;
+            }
+            .navbar-nav {
+                height: 100%;
+                font-size: 14px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }
+            .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+                color: #29dd9f;
+                background-color: #ffffff; 
+            }
+            .logo{
+                
+                height: 100%;
+                
+                display: block;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }
+            .container_body{
+                margin-top: 76px;
+            }
+
+            @media screen and (max-width: 800px) {
+            .container_body{
+                margin-top: 51px;
+            }
+            .logo{
+                
+                height: 100%;
+                display: block;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }.navbar{
+                background-color: white;
+                height: 40px;
+            }
+            .logo_movil{
+                height: 50px
+            }
+            .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+                height: auto !important;
+            }
+            .navbar-default .navbar-brand {
+                background-color: #ffffff;
+            }
+            .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+                color: #333;
+                background-color: white;
+            }
+            .navbar-default .navbar-nav>li>a {
+                background-color: #ffffff;
+            }
+            .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+                background-color: #ffffff;
+            }
+            }
+
+
+
+
+
+
+            {% block style_scripts %}
+            {% endblock %}
+        </style>
+
+    </head>
+    <body>
+        <!-- Static top navbar -->
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container_nav">
+            <div class="navbar-header" style="height: 100%;">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-collapse"><!-- NOTE!  data-toggle was changed to top-collapse -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="logo" href="{% url 'main' %}"><img class="logo_movil" src="/resources/pictures/logo.png"></a>
+            </div>
+            <div class="navbar-collapse collapse top-collapse" id="a"><!-- NOTE!  the class top-collapse was added here -->
+              <ul class="nav navbar-nav navbar-brand">
+                <li id="menu" class="active" ><a  href="{% url 'main' %}">Buscar proyectos</a></li>
+                <li id="menu1" ><a href="{% url 'como_utilizar'  %}">¿Cómo utilizar infras?</a></li>
+                <li id="menu2"><a href="{% url 'licencias'  %}">Licencias ambientales</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proyectos <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Importar Proyectos OC4IDS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="{% url 'reporte'  %}">Estadísticas Proyectos</a></li>
+                  </ul>
+                </li>
+                <li id="menu3"><a href="{% url 'contacto'  %}">Contacto</a></li>
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+       
+
+ 
+        <div class="container_body" >
+            {% block login %}
+            {% endblock %}
+            {% block header %}
+            {% endblock %}
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!-- Static bottom navbar -->
+        <div class="navbar navbar-default navbar-fixed-bottom">
+          <div class="container_nav">
+            <div class="navbar-header" style="height: 100%;">
+              <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bottom-collapse"> <!-- NOTE! data-target was changed to .bottom-collapse -->
+                <!--<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>-->
+              <a class="logo" href="http://costhonduras.hn/"><img style="width: 70%;"src="/resources/pictures/logo_cost.png"></a>
+            </div>
+            <div class="navbar-collapse collapse bottom-collapse"> <!-- NOTE! The extra bottom-collapse class put on here -->
+              <ul class="nav navbar-nav" style="margin-left: -35px;">
+                <li><a class="navbar"href="#">Un sitio administrado por </a></li>
+                <li style="margin-left: -25px;"><a  class="navbar" href="http://costhonduras.hn/" style="color: #29dd9f;background-color: transparent;">Cost Honduras</a></li>
+              </ul>
+              <ul class="nav navbar-nav" style="float: right;">
+                <li><a class="navbar"href="#">© 2019 Cost Honduras </a></li>
+              
+               <a class="logo" href="http://costhonduras.hn/"><img style="width: 40%;" src="/resources/pictures/creative-commons.png"></a>
+               </ul>
+           </ul>
+
+            <!--</div><!--/.nav-col-->
+          </div>
+
+        </div>
+         </div>
+    </body>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+        {% block js %}
+        {% endblock %}
+
+        
+    </body>
+</html>

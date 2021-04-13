@@ -1,0 +1,285 @@
+{% extends "main.html" %}
+        {% block header %}
+            
+        {% endblock %}
+        {% block content %}
+        <div id="container" style="width:100%;" >
+          <table style="width: 100%; height:100%;" >
+            <tbody>
+              <tr style="height:70%;">
+                <td style="width: 50%;padding: 4%;color:white !important;"> 
+                  <table style="width: 100%; height:100%;" >
+                    <tbody>
+                      <tr style="height:20%;">
+                        <td>
+                          <h4>{{proyecto.nombre}}</h4>
+                        </td>
+                      </tr>
+                      <tr style="height:20%;">
+                        <td>
+                          {{proyecto.descripcion}}
+                        </td>
+                      </tr>
+                      <tr style="height:20%;">
+                        <td>
+                          {{proyecto.departamento}},{{proyecto.municipio}}
+                        </td>
+                      </tr>
+                      <tr style="height:20%;">
+                        <td>
+                          {{proyecto.latitud}},
+                          {{proyecto.longitud}}
+                        </td>
+                      </tr>
+                      <tr style="height:20%;">
+                        <td>
+                          {{proyecto.precio}}
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                    
+                    <i class="fas fa-file-signature"></i><span>{{proyecto.descripcion}}</span>
+                </td>
+                <td> <div id="map"></div>  </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+       width: 100%;
+        height: 100%;
+        
+        
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+
+    </style>
+    <script>
+      var image = '/resources/pictures/loc3.png';  
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: {{proyecto.latitud}}, lng: {{proyecto.longitud}}},
+          zoom: 14,
+          mapTypeControl: true,
+    mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        position: google.maps.ControlPosition.TOP_CENTER
+    },
+          styles:
+
+[{
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": "50"
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "30"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "40"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ffff00"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -97
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    }
+]
+        
+        });
+
+       
+            var uluru={lat: {{ proyecto.latitud }}, lng: {{ proyecto.longitud }}};
+            var contentString = '<div id="content" style="min-height:auto;width: 250px;font-size:11px;padding: 3px;">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h6 id="firstHeading" class="firstHeading">{{ proyecto.nombre }}</h6>'+
+                '<div id="bodyContent">'+
+                    '<table><tbody>'+
+                        '<tr style="height:30px">'+
+                            '<td><i class="fas fa-file-signature"></i></td>'+
+                            '<td>{{ proyecto.descripcion }}</td>'+
+                        '</tr>'+
+                        '<tr style="height:30px">'+
+                            '<td><i class="fas fa-map-marked-alt"></td>'+
+                            '<td>{{proyecto.departamento}},{{proyecto.municipio}}</td>'+
+                        '</tr>'+
+                        '<tr style="height:30px">'+
+                            '<td><i class="fas fa-map-marker-alt"></td>'+
+                            '<td>{{proyecto.latitud}},{{proyecto.longitud}}</td>'+
+                        '</tr>'+
+                        '<tr style="height:30px">'+
+                            '<td><b><i class="fas fa-calendar-check"></b></td>'+
+                            '<td>{{proyecto.tipo}}</td>'+
+                        '</tr>'+
+                        '<tr style="height:30px">'+
+                            '<td><i class="fas fa-coins"></td>'+
+                            '<td>{{proyecto.precio|floatformat:2}}</td>'+
+                        '</tr>'+
+                    '</tbody>'+
+                    '</table>'+
+                    '<p><b></b></p>'+
+                    
+                    '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+              icon: image,
+              title: 'Uluru (Ayers Rock)'
+            });
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+            });
+                     
+
+
+
+
+
+
+
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOdGm7yHPJn_GwH5pfgTgVIGOExkW7bkw&callback=initMap"
+    async defer></script>
+       
+
+        {% endblock %}

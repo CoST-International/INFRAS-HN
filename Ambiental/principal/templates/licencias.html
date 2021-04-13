@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+        {% block content %}
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href='/resources/css/estilo.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <title>Licencias ambientales</title>
+</head>
+<body>
+  <div class="main_content">
+    <h1>Licencias ambientales</h1>
+    <br>
+    <div class="licencia_texto">
+      <p>Todo proyecto, obra o actividad público o privado, debe tener una licencia ambiental antes de iniciar su ejecución.
+El primer paso para la obtención de una licencia ambiental es categorización del proyecto, obra o actividad por medio de la tabla de categorización ambiental.
+</p>
+    </div>
+    <div class="row">
+
+
+    <div class="column">
+      <div class="cuadro">
+        <h3>Categoría 1</h3>
+        <p>Corresponde con proyectos, obras o actividades consideradas de bajo impacto ambiental, potencial o riesgo ambiental.</p>
+      </div>
+      <br>
+      <div class="cuadro">
+        <h3>Categoría 2</h3>
+        <p>Corresponde con proyectos, obras o actividades de moderado impacto ambiental potencial o riesgo ambiental.</p>
+        <p>
+          
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="cuadro">
+        <h3>Categoría 3</h3>
+        <p>Corresponde con proyectos, obras o actividades de alto impacto ambiental potencial o riesgo ambiental.</p>
+        <br>
+
+      </div>
+    <br>
+      <div class="cuadro">
+        <h3>Categoría 4</h3>
+        <p>Corresponde con proyectos, obras o actividades consideradas de muy alto impacto ambiental potencial o riesgo ambiental. Los mega-proyectos de desarrollo son parte de esta categoría.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+<script >
+$( document ).ready(function() {
+    $('li.active').removeClass('active');
+        $('#menu2').addClass('active');
+});
+</script>
+   {% endblock %}

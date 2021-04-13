@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+        {% block content %}
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href='/resources/css/estilo_contacto.css' rel='stylesheet'>
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="main_content">
+      <h1>Contacto</h1>
+      <br>
+      <div class="licencia_texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae massa facilisis, laoreet ligula et, consequat sapien. Praesent dignissim eros eget interdum ornare. Donec aliquet augue non dui faucibus efficitur.</p>
+      </div>
+      <form action="index.html" method="post">
+        <input name="name" type="text" class="feedback-input" placeholder="Nombre" />
+        <input name="phone" type="text" class="feedback-input" placeholder="Teléfono" />
+        <input name="email" type="text" class="feedback-input" placeholder="Correo Electrónico"/>
+        <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
+        <p class="politica">La información requerida en este formulario es estrictamente confidencial. Lea nuestra <a href="">política de privacidad</a></p>
+        <input type="submit" value="Enviar" / >
+      </form>
+    </div>
+  </body>
+
+
+         <script >
+$( document ).ready(function() {
+    $('li.active').removeClass('active');
+        $('#menu3').addClass('active');
+});
+</script>
+   {% endblock %}

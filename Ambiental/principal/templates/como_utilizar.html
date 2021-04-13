@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+        {% block content %}
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href='/resources/css/estilo.css' rel='stylesheet'>
+    <title>¿Cómo utilizar infras?</title>
+  </head>
+  <body>
+    <div class="main_content">
+      <h1>¿Cómo utilizar infras?</h1>
+      <img src="/resources/pictures/steps.png" alt="steps">
+      <div class="primero">
+        <p>El propósito de InfraS es contribuir a brindar claridad a los los tomadores de decisiones sobre los riesgos de los proyectos de obra pública y oportunidades para encaminar el país hacia el desarrollo de infraestrcutura sostenible que permita aumentar la cobertura y calidad de servicios básicos y de esta forma contribuir a alcanzar los Objetivos de Desarrollo Sostenible (ODS).</p>
+      </div>
+      <div class="primero">
+        <p>También permite a la ciudadanía monitorear la implementación de medidas de mitigación del impacto ambiental y social de los proyectos de obra pública, interactuando mediante la plataforma con CoST- Iniciativa de Transparencia en Infraestructura, para conjuntamente influenciar a los tomadores de decisiones sobre medidas covenientes que deben tomarse en cada uno de los proyectos de obra pública que se encuentran en áreas vulnerables o tienen potencial de conflictividad social. </p>
+
+        <p>InfraS ofrece un sistema de banderas que permite visualizar fácilmente los proyectos con potenciales riesgos ambientales (primera fase), sociales, institucionales y económicos y financieros (segunda fase), de acuerdo a datos obtenidos del SISOCS y de otros sistemas de información y gestión pública.</p>
+      </div>
+    </div>
+
+  </body>
+<script >
+$( document ).ready(function() {
+    $('li.active').removeClass('active');
+        $('#menu1').addClass('active');
+});
+</script>
+   {% endblock %}

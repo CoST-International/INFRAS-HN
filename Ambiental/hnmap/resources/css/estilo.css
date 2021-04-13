@@ -1,0 +1,88 @@
+body{
+ background-image: url("/resources/pictures/background-pattern.png");
+ background-color: #eeeeee;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.main_content{
+	max-width:700px;
+	margin:50px auto;
+	padding:20px;
+}
+
+.main_content h1{
+  display: block;
+	text-align: center;
+	padding-left: 50px;
+  padding-right: 50px;
+	margin: 0px 0px 20px 0px;
+}
+
+.main_content img{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: block;
+  margin: 0 auto;
+/*  padding: 50px;*/
+  text-align: center;
+  height: 300px;
+  /*width: 600px;*/
+}
+
+
+div.primero{
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+div.resto{
+    font-size: small;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Estilo para página licencias*/
+
+div.licencia_texto{
+      font-size: large;
+      text-align: center;
+}
+
+div.cuadro {
+  border-radius: 5px;
+  background-image: linear-gradient(-225deg, rgba(41,221,158,1), rgba(61,154,185,1));
+  padding: 20px;
+  width: 300px;
+  height: auto;
+}
+
+
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.column br{
+   display: block;
+   margin: 10px 0;
+   content: " ";
+
+}
+
+div.cuadro h3 {
+  	text-align: center;
+    color: white;
+}
+
+div.cuadro p {
+  	text-align: center;
+    font-size: small;
+    color: white;
+}
