@@ -50,10 +50,14 @@ La herramienta está compuesta por cuatro componentes correspondientes a las dim
 
 #### Dimensión Ambiental
 <p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_ambiental.png" height="414" width="710"></p>
+
 #### Dimensión Institucional 
+
 <p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_institucional.png" height="405" width="710"></p>
+
 #### Dimensión Social y Económica
 <p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_socialyeconomica.png" height="451" width="710"></p>
+
 
 ### Uso del sistema
 
