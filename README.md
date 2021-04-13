@@ -4,7 +4,6 @@
 
 # [InfraS](https://infras-hn.org)
 
-[English documentation](README_en.MD)
 
 - [Descripción y contexto](#descripción-y-contexto)
 - [Guía del usuario](#guía-del-usuario)
@@ -42,19 +41,19 @@ InfraS usa diversos datos oficiales entre los que destacan los publicados en el 
 
 La herramienta está compuesta por cuatro componentes correspondientes a las dimensiones de la infraestructura sostenible. En cada dimensión se miden indicadores relevantes construidos a partir de los datos disponibles sobre los proyectos de infraestructura pública en Honduras. 
  
-![image](https://infras-hn.org/images/infras/dimensiones_infras.png)
+<p align="center"><img src="https://infras-hn.org/images/infras/dimensiones_infras.png" height="375" width="636"></p>
 
 ## Guía del usuario
 
 
 ### Arquitectura 
 
-Dimensión Ambiental
-<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_ambiental.png"></p>
-Dimensión Institucional 
-<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_institucional.png"></p>
-Dimensión Social y Económica
-<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_socialyeconomica.png"></p>
+#### Dimensión Ambiental
+<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_ambiental.png" height="414" width="710"></p>
+#### Dimensión Institucional 
+<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_institucional.png" height="405" width="710"></p>
+#### Dimensión Social y Económica
+<p align="center"><img src="https://infras-hn.org/images/infras/arquitectura_socialyeconomica.png" height="451" width="710"></p>
 
 ### Uso del sistema
 
