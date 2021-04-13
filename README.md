@@ -57,7 +57,7 @@ Dimensión Social,Institucional y Económica
 ### Uso del sistema
 
 #### Acceso
-Existen dos formas para ingresar al sistema, en la primera debe de buscar en su navegador de confianza SISOCS APP y la segunda forma consiste en ingresar por medio de un enlace (https://infras-hn.org/) que lo llevará automáticamente al sitio.
+Los usuarios pueden ingresar al sitio por medio del enlace (https://infras-hn.org/).
 
 #### Página de inicio
 
@@ -67,16 +67,23 @@ La barra de menú contiene las siguientes opciones:
 
 <p align="center"><img src="https://infras-hn.org/images/infras/infras-menu.PNG"></p>
 
-1.	Dimensión Ambiental.
-2.	Dimensión Institucional.
-3.	Dimensión Social.
-4.	Dimensión Económica. 
+1.	Dimensión Ambiental: enlace directo a los indicadores relacionados con la sostenibilidad ambiental.
+2.	Dimensión Institucional: enlace directo a los indicadores relacionados con la sostenibilidad institucional.
+3.	Dimensión Social: enlace directo a los indicadores relacionados con la sostenibilidad social.
+4.	Dimensión Económica: es un enlace directo a los indicadores relacionados con la sostenibilidad económica.  
 
 
 #### B) Dimensión Ambiental 
+En este componente se presentan visualizaciones asociadas al licenciamiento ambiental, la ubicación de los proyectos en zonas ambientalmente sensitivas y en zonas prioritarias para la gestión de riesgos y de desastres de los proyectos de infraestructura pública. 
+
 #### C) Dimensión Institucional 
+En este componente se presenta un tablero de análisis sobre la eficiencia, apertura y transparencia en los procesos de contratación asociados a proyectos de infraestructura pública. 
+
 #### D) Dimensión Social
+Este componente presenta un tablero de análisis sobre los proyectos que han tenido algún impacto en reasentamientos. 
+
 #### E) Dimensión Económica 
+En este componente se presenta la distribución de la inversión actual en infraestructura por institución, sector y regiones del país. 
 
 ## Guía de instalación
 
