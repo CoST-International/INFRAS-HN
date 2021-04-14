@@ -31,7 +31,7 @@
 
 InfraS es una plataforma diseñada por la Iniciativa de Transparencia en Infraestructura -CoST Honduras- con el objetivo de promover que la infraestructura pública se planee y conserve adecuadamente apostando a su sostenibilidad ambiental, social, institucional y económica.
 
-[CoST Honduras](https://costhonduras.hn/) espera contribuir al logro de los [Objetivos de Desarrollo Sostenible (ODS)](https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/) en el país al abordar los riesgos ambientales de los proyectos, analizar los recursos financieros para construir y mantener la infraestructura durante su vida útil, identificar afectación de las obras en grupos de población y entender la dinámica institucional sobre el manejo de las contrataciones públicas, identificando, a la vez, oportunidades de mejora para el desarrollo de infraestructura sostenible.
+[CoST Honduras](https://costhonduras.hn/) espera contribuir al logro de los [Objetivos de Desarrollo Sostenible (ODS)](https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/) en el país al abordar los riesgos ambientales de los proyectos, analizar los recursos financieros para construir y mantener la infraestructura durante su vida útil, identificar la afectación de las obras en grupos de población y entender la dinámica institucional sobre el manejo de las contrataciones públicas, identificando, a la vez, oportunidades de mejora para el desarrollo de infraestructura sostenible.
 
 
 InfraS usa diversos datos oficiales entre los que destacan los publicados en el [Sistema de Información y Seguimiento a Obras y Contratos de Supervisión- SISOCS](https://sisocs.org/) y en el [Portal de Contrataciones Abiertas de Honduras](http://www.contratacionesabiertas.gob.hn/), los cuales cumplen con reconocidos estándares internacionales. InfraS presentará análisis por cada una de las áreas que componen la infraestructura sostenible, en el marco de compromisos de la [Alianza para el Gobierno Abierto de Honduras](http://www.gobiernoabiertohonduras.org/).
@@ -72,11 +72,11 @@ La barra de menú contiene las siguientes opciones:
 1.	Dimensión Ambiental: enlace directo a los indicadores relacionados con la sostenibilidad ambiental.
 2.	Dimensión Institucional: enlace directo a los indicadores relacionados con la sostenibilidad institucional.
 3.	Dimensión Social: enlace directo a los indicadores relacionados con la sostenibilidad social.
-4.	Dimensión Económica: es un enlace directo a los indicadores relacionados con la sostenibilidad económica.  
+4.	Dimensión Económica: enlace directo a los indicadores relacionados con la sostenibilidad económica.  
 
 
 #### B) Dimensión Ambiental 
-En este componente se presentan visualizaciones asociadas al licenciamiento ambiental, la ubicación de los proyectos en zonas ambientalmente sensitivas y en zonas prioritarias para la gestión de riesgos y de desastres de los proyectos de infraestructura pública. 
+En este componente se presentan visualizaciones asociadas al licenciamiento ambiental, la ubicación de los proyectos en zonas ambientalmente sensibles y en zonas prioritarias para la gestión de riesgos y de desastres de los proyectos de infraestructura pública. 
 
 #### C) Dimensión Institucional 
 En este componente se presenta un tablero de análisis sobre la eficiencia, apertura y transparencia en los procesos de contratación asociados a proyectos de infraestructura pública. 
@@ -100,30 +100,30 @@ En este componente se presenta la distribución de la inversión actual en infra
 
 #### Indicaciones:
 
-La dimensión ambiental está desarrollada en Django 1.6, con base de datos en SQLite 3, la misma con el API Javascript de gooogle maps, para las dimensiones Institucional, Social y Económica se utiliza un objeto html iframe apuntando al su correspondiente informe de power bi:
+La dimensión ambiental está desarrollada en Django 1.6, con base de datos en SQLite 3, la misma con el API Javascript de Gooogle Maps, para las dimensiones Institucional, Social y Económica se utiliza un objeto HTML iframe apuntando al su correspondiente informe de Power BI:
 
 * [Dimensión Institucional](https://app.powerbi.com/view?r=eyJrIjoiM2JmYzlkZWMtMzgzYy00ZDI5LWJjYjAtYTU2NGZiZjFiZWJjIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Social](https://app.powerbi.com/view?r=eyJrIjoiYjEwMzZjNGYtZjYzMS00MzVhLWJjOTItNmQ0Mjk4NDc1ZDQzIiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9&pageName=ReportSection30219edae0097ec3abb8)
 * [Dimensión Económica](https://app.powerbi.com/view?r=eyJrIjoiMGIyNzQwZGYtNWZhZi00NDdmLWI5ZGItZjYyMTM5NTUxMGI4IiwidCI6Ijg5NDQzNTY4LWJlZWMtNDFkMi04Yzc3LWU2MDFmYWIxNTVjYiJ9)
 
-Para estas dimensiones solamente es necesario copiar los html correspondientes los cuales son llamados desde el menu superior del sitio.
-A continuación los pasos necesarios para instalar la dimension Ambiental:
+Para estas dimensiones solamente es necesario copiar los HTML correspondientes, los cuales son llamados desde el menu superior del sitio.
+A continuación los pasos necesarios para instalar la dimensión Ambiental:
 
 #### Instalación Django 1.6:
 
-Para instalar la versión 1.6 de Django solo debes utilizar el administrador de paquetes pip y pedirle que instale Django en su version 1.6 con el siguiente comando:
+Para instalar la versión 1.6 de Django solo debes utilizar el administrador de paquetes PIP y pedirle que instale Django en su versión 1.6 con el siguiente comando:
 
 ```
 pip install Django==3.2
 ```
-Para manejar las imágenes dentro de django se utiliza la libreria pillow para python en su version 1.1.7, para instalar ejecutar el siguiente comando:
+Para manejar las imágenes dentro de Django se utiliza la libreria pillow para Python en su version 1.1.7, para instalar ejecutar el siguiente comando:
 
 ```
 pip install pillow=1.1.7
 ```
-#### Configuración Base de datos:
+#### Configuración de la base de datos:
 
-La base de datos dentro de Django es configurada dentro del archivo settings.py el cual se encuentra dentro de la carpeta hnmap/settings.py desde alli se puede configurar que base de datos se utilizará en este caso sqllite en su versión 3.
+La base de datos dentro de Django es configurada dentro del archivo settings.py el cual se encuentra dentro de la carpeta hnmap/settings.py desde alli se puede configurar que base de datos se utilizará en este caso SQLite en su versión 3.
 
 ```
 # Database
@@ -137,11 +137,11 @@ DATABASES = {
 }
 
 ```
-Una de las ventajas de Django es que el propio lenguaje administra la base de datos a traves de modelos, para mas información https://docs.djangoproject.com/es/3.1/releases/1.6/#
+Una de las ventajas de Django es que el propio lenguaje administra la base de datos a través de modelos, para mas información https://docs.djangoproject.com/es/3.1/releases/1.6/#
 
-#### Configuración API Google maps
+#### Configuración API Google Maps
 
-Para realizar la configuración con el API de Google maps es necesario crear una cuenta para obtener un key, para mas información sobre como obtener el key  https://developers.google.com/maps/documentation/javascript/get-api-key.
+Para realizar la configuración con el API de Google Maps es necesario crear una cuenta para obtener un key, para mas información sobre como obtener el key  https://developers.google.com/maps/documentation/javascript/get-api-key.
 
 Dentro del código fuente en el archivo /principal/templates/main.html debes sustituir las xxxxxxxxxxxxxxxxxxxxxxxxxxxx por el key brindada por Google.
 
