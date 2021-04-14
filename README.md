@@ -169,14 +169,14 @@ Quit the server with CTRL-BREAK.
 
 La plataforma de divulgación para datos de infraestructura es un esfuerzo de [CoST -la Iniciativa de Transparencia en Infraestructura](https://infrastructuretransparency.org/https://infrastructuretransparency.org/)- que tiene como objetivo apoyar y guiar a los miembros y socios de CoST para contribuir, explorar y reutilizar herramientas digitales de código abierto publicadas en nuestro [Repositorio de GitHub](https://github.com/infrastructure-transparency). Estas herramientas se pueden utilizar en el diseño e implementación de procesos de divulgación con el objetivo de mejorar la transparencia y la rendición de cuentas en el sector de infraestructura en todo el mundo.
 
-CoST cree que los códigos fuentes abiertos desarrollados por nuestros miembros y socios deben estar a disposición del público para ayudarnos a contribuir a proporcionar infraestructuras de calidad, fortalecer las economías y mejorar vidas. 
+CoST cree en que los códigos fuentes abiertos desarrollados por nuestros miembros y socios deben estar a disposición del público para ayudarnos a contribuir a proporcionar infraestructuras de calidad, fortalecer las economías y mejorar vidas. 
 Por ello, CoST anima a quienes contribuyen a la mejora de estas herramientas digitales a que compartan sus aportes con nosotros. 
 
 Si al reutilizar esta herramienta digital, consideras que
 * Has añadido alguna funcionalidad nueva con la que aportas valor para que más personas la reutilicen,
 * Has hecho la herramienta más versátil para respaldar nuevas actualizaciones,
 * Has corregido algunos errores existentes,
-* O simplemente has mejorado la interfaz de usuario o la documentación de la misma.
+* O simplemente has mejorado la interfaz de usuario o la documentación de la misma,
 
 Te invitamos a que devuelvas los progresos realizados al repositorio. Sigue estos pasos para contribuir a la herramienta:
 
@@ -185,7 +185,7 @@ Te invitamos a que devuelvas los progresos realizados al repositorio. Sigue esto
 3.	Haz una “solicitud de eliminar” documentando en detalle los cambios propuestos en el repositorio.
 4.	En ese caso, tu nombre quedará registrado en la lista de atribuciones.
 
-Si no has contribuido al repositorio, pero la herramienta te ha resultado útil, nos encantaría conocer tu experiencia. Cuéntanos tu experiencia en un “Issue” o por correo electrónico a opencode@infrastructuretransparency.org
+Si no has contribuido al repositorio, pero la herramienta te ha resultado útil, nos encantaría conocer tu experiencia. Cuéntanos tu experiencia en un “Issue” o por correo electrónico a opencode@infrastructuretransparency.org. 
 
 
 ### Atribuciones
@@ -206,21 +206,21 @@ Algunos ejemplos de comportamientos que contribuyen a crear un entorno positivo 
 
 Ejemplos de comportamiento inaceptable por parte de los participantes son:
 * El uso de lenguaje o imágenes sexualizadas, atenciones e insinuaciones sexuales no deseadas.
-*	Ofensas, comentarios insultantes/despectivos y ataques personales o políticos.
-*	Acoso público o privado.
-*	Publicar información privada de otros, como una dirección física o electrónica, sin permiso explícito.
-*	Otras conductas que puedan considerarse razonablemente inapropiadas en un entorno profesional.
+* Ofensas, comentarios insultantes/despectivos y ataques personales o políticos.
+* Acoso público o privado.
+* Publicar información privada de otros, como una dirección física o electrónica, sin permiso explícito.
+* Otras conductas que puedan considerarse razonablemente inapropiadas en un entorno profesional.
 
 ### Nuestras responsabilidades
 
-Los que dan mantenimiento y colaboradores del proyecto son responsables de aclarar las normas de comportamiento aceptable y se espera que tomen medidas correctivas adecuadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
+Las personas a cargo del mantenimiento y colaboradoras del proyecto son responsables de aclarar las normas de comportamiento aceptable y se espera que tomen medidas correctivas adecuadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
 Los responsables del mantenimiento de las Plataformas de Divulgación de datos sobre Infraestructura, tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, confirmaciones, códigos, ediciones wiki, cuestiones y otras contribuciones que no se ajusten a este Código de Conducta, o prohibir temporal o permanentemente a cualquier colaborador por otros comportamientos que consideren inapropiados, amenazantes, ofensivos o perjudiciales.
 
 ### Ámbito de aplicación
 
-Este Código de Conducta se aplica tanto en los espacios de la Plataforma de Transparencia en Infraestructura como en los espacios públicos cuando una persona representa a CoST o a su comunidad. Ejemplos de representación de CoST o de la comunidad incluyen el uso de una dirección de correo electrónico oficial, la publicación a través de una cuenta oficial en las redes sociales o la actuación como representante designado en un evento en línea o fuera de línea. La representación de un CoST puede ser definida y aclarada por los responsables de la Plataforma de Transparencia en Infraestructura.
+Este Código de Conducta se aplica tanto en los espacios de la Plataforma de Transparencia en Infraestructura como en los espacios públicos cuando una persona representa a CoST o a su comunidad. Ejemplos de representación de CoST o de la comunidad incluyen el uso de una dirección de correo electrónico oficial, la publicación a través de una cuenta oficial en las redes sociales o la actuación como representante designado en un evento en línea o fuera de línea. La representación de CoST puede ser definida y aclarada por los responsables de la Plataforma de Transparencia en Infraestructura.
 
-### Aplicación de este código
+### Aplicación de este código de conducta
 
 Los casos de comportamiento abusivo, acosador o inaceptable pueden denunciarse poniéndose en contacto con el responsable de este repositorio o en opencode@infrastructuretransparency.org.
 Todas las denuncias serán revisadas e investigadas y darán lugar a una respuesta que se considere necesaria y adecuada a las circunstancias. El equipo de CoST está obligado a mantener la confidencialidad sobre el denunciante de un incidente.
@@ -232,7 +232,7 @@ Este Código de Conducta es una adaptación del [Pacto de Colaboradores](https:/
 
 
 ## Autores
-La Iniciativa CoST Honduras es el autor originales de [InfraS](https://infras-hn.org).
+La Iniciativa CoST Honduras es el autor original de [InfraS](https://infras-hn.org).
 
 ## Información adicional
 
