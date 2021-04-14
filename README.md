@@ -143,7 +143,7 @@ Una de las ventajas de Django es que el propio lenguaje administra la base de da
 
 Para realizar la configuración con el API de Google Maps es necesario crear una cuenta para obtener un key, para mas información sobre como obtener el key  https://developers.google.com/maps/documentation/javascript/get-api-key.
 
-Dentro del código fuente en el archivo /principal/templates/main.html debes sustituir las xxxxxxxxxxxxxxxxxxxxxxxxxxxx por el key brindada por Google.
+Dentro del código fuente en el archivo /principal/templates/main.html debes sustituir las `xxxxxxxxxxxxxxxxxxxxxxxxxxxx` por el key brindada por Google.
 
 ```
     <script src="https://maps.googleapis.com/maps/api/js?key=xxxxxxxxxxxxxxxxxxxxxxxxxxxx&callback=initMap"
